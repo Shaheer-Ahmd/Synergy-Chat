@@ -29,7 +29,7 @@ export default function () {
               messages: [
                 ...channel.messages,
                 {
-                  user: "user",
+                  user: "Shaheer Ahmad",
                   text: input,
                   replies: [],
                   time:
@@ -60,7 +60,7 @@ export default function () {
                       replies: [
                         ...message.replies,
                         {
-                          user: "user",
+                          user: "Shaheer Ahmad",
                           text: input,
                           replies: [],
                           time:

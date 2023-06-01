@@ -3,6 +3,7 @@ import { useState } from 'react'
 import {ChannelContext} from './ChannelContext.jsx'
 import Home from './pages/Home.jsx'
 import {BrowserRouter, Route,Routes} from 'react-router-dom'
+import Logo from './assets/logo.png'
 import './index.css'
 export default function App() {
   
@@ -15,6 +16,10 @@ export default function App() {
   return (
     <ChannelContext.Provider value = {{Channels,setChannels,ActiveChannel,setActiveChannel,Replying, setReplying}}>
       {/* <Home/> */}
+      <div className="header">
+      <img src={Logo} alt="Logo" className="logo" />
+      <h1 className="heading">Synergy Chat</h1>
+      </div>
       <BrowserRouter>
       <Routes>
         <Route path = "/" element = {<Home/>}/>
